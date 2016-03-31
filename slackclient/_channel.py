@@ -6,6 +6,9 @@ class Channel(object):
         self.members = [] if members is None else members
 
     def __eq__(self, compare_str):
+        print("in __eq__")
+        print(self)
+        print(compare_str)
         # if self.name == compare_str or self.name == "#" + compare_str or self.id == compare_str:
         #     return True
         # else:
