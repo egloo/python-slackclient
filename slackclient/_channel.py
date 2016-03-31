@@ -13,7 +13,7 @@ class Channel(object):
         #     return True
         # else:
         #     return False
-        return compare_str in (self.id, self.name) or "#" + compare_str == self.name
+        return compare_str in (self.id, self.name) or (compare_str is not None and "#" + compare_str == self.name)
 
     def __str__(self):
         # data = ""
